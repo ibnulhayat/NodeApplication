@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_4_dp"
+    app:cardBackgroundColor="@color/colorForth">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvSellerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="@dimen/padding_4_dp"
+            android:text="@string/additional_sms"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/testSize_16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvSellerLocation"
+            app:layout_constraintEnd_toStartOf="@+id/etLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvSellerLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="@dimen/padding_4_dp"
+            android:text="@string/fabric_gsm"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/testSize_16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvSellerNumber"
+            app:layout_constraintEnd_toStartOf="@+id/etLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSellerName" />
+
+
+        <TextView
+            android:id="@+id/tvSellerNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="@dimen/padding_4_dp"
+            android:text="@string/fabric_weight"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/testSize_16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvFabricPrice"
+            app:layout_constraintEnd_toStartOf="@+id/etLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSellerLocation" />
+
+
+        <TextView
+            android:id="@+id/tvFabricPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="@dimen/padding_4_dp"
+            android:text="@string/color_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/testSize_16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/etLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSellerNumber" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/etLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFabricPrice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivDialPad"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="@dimen/margin_8_dp"
+                android:src="@drawable/call"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/etLayout" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

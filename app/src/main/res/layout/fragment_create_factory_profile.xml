@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorForth"
+    tools:context=".factory.CreateFactoryProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create Factory Profile"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2_dp"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:layout_marginEnd="@dimen/margin_2_dp"
+                    app:cardBackgroundColor="@color/colorFifth"
+                    app:cardCornerRadius="@dimen/margin_24_dp"
+                    app:cardElevation="2dp">
+
+                    <EditText
+                        android:id="@+id/etFactoryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="@string/factory_name"
+                        android:inputType="textCapSentences"
+                        android:nextFocusDown="@id/etSpecificType"
+                        android:padding="16dp"
+                        tools:ignore="Autofill" />
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="@dimen/margin_2_dp"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:layout_marginEnd="@dimen/margin_2_dp"
+                    app:cardBackgroundColor="@color/colorFifth"
+                    app:cardCornerRadius="@dimen/margin_24_dp"
+                    app:cardElevation="2dp">
+
+                    <Spinner
+                        android:id="@+id/spFactoryType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:padding="16dp"
+                        tools:ignore="Autofill" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2_dp"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:layout_marginEnd="@dimen/margin_2_dp"
+                    app:cardBackgroundColor="@color/colorFifth"
+                    app:cardCornerRadius="@dimen/margin_24_dp"
+                    app:cardElevation="2dp">
+
+                    <EditText
+                        android:id="@+id/etSpecificType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="@string/specific_type"
+                        android:inputType="textCapSentences"
+                        android:nextFocusDown="@id/etCompliance"
+                        android:padding="16dp"
+                        tools:ignore="Autofill" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2_dp"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:layout_marginEnd="@dimen/margin_2_dp"
+                    app:cardBackgroundColor="@color/colorFifth"
+                    app:cardCornerRadius="@dimen/margin_24_dp"
+                    app:cardElevation="2dp">
+
+                    <EditText
+                        android:id="@+id/etCompliance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="@string/compliance_percentage"
+                        android:inputType="textCapSentences"
+                        android:nextFocusDown="@id/etProduction"
+                        android:padding="16dp"
+                        tools:ignore="Autofill" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2_dp"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:layout_marginEnd="@dimen/margin_2_dp"
+                    app:cardBackgroundColor="@color/colorFifth"
+                    app:cardCornerRadius="@dimen/margin_24_dp"
+                    app:cardElevation="2dp">
+
+                    <EditText
+                        android:id="@+id/etProduction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="@string/production_capability"
+                        android:inputType="number"
+                        android:nextFocusDown="@id/etOrder"
+                        android:padding="16dp"
+                        tools:ignore="Autofill" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2_dp"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:layout_marginEnd="@dimen/margin_2_dp"
+                    app:cardBackgroundColor="@color/colorFifth"
+                    app:cardCornerRadius="@dimen/margin_24_dp"
+                    app:cardElevation="2dp">
+
+
+                    <EditText
+                        android:id="@+id/etOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="@string/minimum_order"
+                        android:inputType="textCapSentences"
+                        android:nextFocusDown="@id/etFactoryLocation"
+                        android:padding="16dp"
+                        tools:ignore="Autofill" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2_dp"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:layout_marginEnd="@dimen/margin_2_dp"
+                    app:cardBackgroundColor="@color/colorFifth"
+                    app:cardCornerRadius="@dimen/margin_24_dp"
+                    app:cardElevation="2dp">
+
+
+                    <EditText
+                        android:id="@+id/etFactoryLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="@string/factory_location"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:lines="8"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:nextFocusDown="@id/edMessage"
+                        android:padding="16dp"
+                        tools:ignore="Autofill" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2_dp"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:layout_marginEnd="@dimen/margin_2_dp"
+                    app:cardBackgroundColor="@color/colorFifth"
+                    app:cardCornerRadius="@dimen/margin_24_dp"
+                    app:cardElevation="2dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <EditText
+                                android:id="@+id/edMessage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:gravity="start"
+                                android:hint="@string/additional_sms"
+                                android:inputType="textMultiLine|textCapSentences"
+                                android:lines="8"
+                                android:maxLines="3"
+                                android:minLines="6"
+                                android:padding="16dp"
+                                android:scrollbars="vertical"
+                                tools:ignore="Autofill" />
+                        </LinearLayout>
+                    </ScrollView>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvFactory"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="@dimen/margin_2_dp"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:layout_marginEnd="@dimen/margin_2_dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="@dimen/margin_24_dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/ivFactoryImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="@dimen/margin_2_dp"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:layout_marginEnd="@dimen/margin_2_dp"
+                    app:cardBackgroundColor="@color/colorFifth"
+                    app:cardCornerRadius="@dimen/margin_24_dp"
+                    app:cardElevation="2dp">
+
+                    <TextView
+                        android:id="@+id/tvFactoryImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:padding="16dp"
+                        android:text="Upload Factory Image"
+                        tools:ignore="Autofill" />
+
+                </android.support.v7.widget.CardView>
+
+
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_2_dp"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:layout_marginEnd="@dimen/margin_2_dp"
+                    android:background="@drawable/login_button_bg_shape"
+                    android:padding="@dimen/margin_8_dp"
+                    android:text="SUBMIT"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginTop="@dimen/margin_2_dp"
+                    android:layout_marginBottom="@dimen/margin_8_dp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

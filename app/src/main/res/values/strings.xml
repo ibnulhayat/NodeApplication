@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Node Application</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="account_sign_up">Don\'t have an account? Please <font fgcolor='#031f4b'> <b>Sign Up</b> </font></string>
+    <string name="account_Login">Already have an account? <font fgcolor='#031f4b'><b>Log in </b></font></string>
+    <string name="log_in">Log In</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="accountType">Account Type</string>
+    <string name="pin_number">Pin Number 4 Digit</string>
+    <string name="welcome">Welcome!</string>
+    <string name="create_account">Create Account</string>
+    <string name="full_name">Name</string>
+    <string name="address">Address</string>
+    <string name="company_name">Company Name</string>
+    <string name="shop_name">Shop or Company Name</string>
+    <string name="age">Age 2 Digit</string>
+    <string name="major_items">Major Items</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="buyer">Buyer</string>
+    <string name="seller">Seller</string>
+    <string name="buying_post">Fabric Buying Post</string>
+    <string name="selling_post">Fabric Selling Post</string>
+    <string name="selling_stock_lot">Selling Stock-Lot</string>
+    <string name="factory_profile">Factory Profile</string>
+    <string name="ask_quote">Ask Quote</string>
+    <string name="notification">Notification Setting</string>
+    <string name="log_out">Log Out</string>
+
+    <string name="fabric_name">Fabric Name</string>
+    <string name="fabric_type">Fabric Type</string>
+    <string name="fabric_gsm_min">Fabric Gsm Min</string>
+    <string name="fabric_gsm">Gsm :</string>
+    <string name="fabric_gsm_max">Fabric Gsm Max</string>
+    <string name="weight_min">Weight Min</string>
+    <string name="fabric_weight">Weight :</string>
+    <string name="weight_max">Weight Max</string>
+    <string name="fabric_color">Fabric Color</string>
+    <string name="color_name">Color Name :</string>
+    <string name="additional_sms">Message</string>
+    <string name="additional">Fabric Price or Any Message</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="menu">Menu</string>
+    <string name="fabrics">Fabrics</string>
+    <string name="stock_lot">Stock-Lot</string>
+    <string name="factory">Factory</string>
+    <string name="quote">Quote</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_name">Item Name</string>
+    <string name="brand">Brand</string>
+    <string name="total_quantity">Total Quantity</string>
+    <string name="price">Price Par Piss</string>
+    <string name="size">Small=50\nMedium=30\nLarge=50</string>
+    <string name="sizeOnly">Size</string>
+    <string name="factory_name">Factory Name</string>
+    <string name="factory_type">Factory Type</string>
+    <string name="specific_type">Specific Type</string>
+    <string name="compliance_percentage">Compliance Percentage</string>
+    <string name="production_capability">Production Capability</string>
+    <string name="minimum_order">Minimum Order</string>
+    <string name="factory_location">Factory Location</string>
+    <string name="design">Design</string>
+
+    <string name="quoteName">Hoodei\n 100 piss \n 100% Cotton\n Asian</string>
+    <string name="downward">Downward</string>
+    <string name="location">Location</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="measurement_type">Measurement Type</string>
+    <string name="colon">:</string>
+    <string name="notification_settings">Notification Settings</string>
+
+
+</resources>
