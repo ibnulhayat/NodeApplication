@@ -12,3 +12,7 @@
 /captures
 .externalNativeBuild
 
+/app/release.zip
+/app/storeKey.jks
+/app/release
+
