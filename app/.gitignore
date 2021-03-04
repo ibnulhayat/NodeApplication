@@ -1,4 +1,4 @@
 /build
-.release.zip
-.storeKey.jks
-/app/release
+/.release.zip
+/.storeKey.jks
+/release
